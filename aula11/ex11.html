@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação de país</title>
+    <style>
+        body{
+            background-color: rgb(22, 124, 22);
+            color: yellow;
+            font: normal 20pt Arial;
+        }
+        h1{
+            font: normal 30pt Arial;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Site de Identificação</h1>
+    País de nascimento: <input type="text" name="" id="pais">
+    <input type="button" value="Confirmar" onclick="Paises()">
+    <div id="resp"></div>
+    <script>
+        function Paises(){
+            var txtnome = window.document.getElementById("pais");
+            var txtfim = window.document.getElementById("resp")
+            var fim = txtfim;
+            var nome = txtnome.value.toUpperCase();
+            if (nome == "BRASIL") {
+                fim.innerHTML = "<div>Você é Brasileiro</div>"
+                fim.innerHTML += `<div>Você nasceu no ${nome}</div>`
+            } else{
+                fim.innerHTML = "<div>Você é Estrangeiro</div>"
+                fim.innerHTML += `<div>Você nasceu no ${nome}</div>`
+            }
+        }
+    </script>
+</body>
+</html>

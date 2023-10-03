@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contagem</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>
+    </header>    
+    <section>
+        <div>
+            <p>Início: <input type="number" name="n1" id="init"></p>
+            <p>Fim: <input type="number" name="n2" id="fim"></p>
+            <p>Passo: <input type="number" name="n3" id="passo"></p>
+            <p><input type="button" value="Contar" onclick="contar()"></p>
+        </div>
+        <div>
+            <p id="conta"></p>
+            <p id="numeros"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; <strong>CursoEmVideo</strong></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
